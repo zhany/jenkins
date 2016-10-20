@@ -2,7 +2,7 @@ stage 'prepare'
 node {
     checkout scm
     def files = findFiles(glob: "*.bat")
-    for (file in files) {
-        bat file.name
+    for (int i = 0; i < files.size; i++) {
+        bat files[i].name
     }
 }
