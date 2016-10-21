@@ -12,4 +12,5 @@ node {
             bat files[i].name
         }
     }
+    echo "done!!!!"
 }
