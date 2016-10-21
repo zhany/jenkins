@@ -1,3 +1,4 @@
+properties([pipelineTriggers([[$class: 'GitHubPushTrigger']])]) 
 stage 'prepare'
 node {
     checkout scm
